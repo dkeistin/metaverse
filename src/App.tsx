@@ -3,6 +3,7 @@ import './App.css';
 import { Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Header from './components/Header';
+import Main from './components/Main';
 
 const useStyles = makeStyles((theme) => ({
   appWrapper: {
@@ -24,6 +25,7 @@ function App() {
   return (
     <Box className={classes.appWrapper}>
       <Header/>
+      <Main/>
     </Box>
   );
 }
