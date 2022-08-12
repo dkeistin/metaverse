@@ -64,8 +64,6 @@ const useStyles = makeStyles((theme) => ({
         width: 100,
         height: 100,
         borderRadius: 12,
-        // paddingRight: 25,
-        // paddingLeft: 25,
         background: 'url("images/description.png")'
     },
     playButton: {
@@ -91,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
 const Blog = () => {
     const classes = useStyles();
     return (
-        <Box className={classes.root}>
+        <Box className={clsx(classes.root, 'container')}>
             <Box className={classes.textContainer}>
                 <Typography className={classes.title}>It's your world</Typography>
                 <Typography className={classes.title}>It's your stage</Typography>

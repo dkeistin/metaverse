@@ -7,3 +7,15 @@
   border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(28px);
 }
+
+.container {
+  padding-left: 120px !important;
+  padding-right: 120px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}

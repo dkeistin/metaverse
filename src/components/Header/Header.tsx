@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '100%',
     },
     descriptionCard: {
       height: 'fit-content',
@@ -69,7 +68,7 @@ const Header = (props: any) => {
     const classes = useStyles();
 
     return (
-        <Box className={classes.root}>
+        <Box className={clsx(classes.root, 'container')}>
             <Box className={clsx(classes.descriptionCard, 'glass')}>
                 <Box className={classes.playBox}>
                     <Link className={classes.playButton} href='#'>
