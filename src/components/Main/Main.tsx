@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
@@ -40,7 +40,9 @@ const useStyles = makeStyles((theme) => ({
         padding: '15px 14px'
     },
     box4: {
-        padding: '22px 62px',
+        color: 'white !important',
+        padding: '22px 62px !important',
+        borderRadius: '12px !important',
         background: 'linear-gradient(298.62deg, #741EE2 -13.65%, #EF38FF 61.86%)',
         boxShadow: '0px 2px 0px #9425EA, 0px 9px 28px rgba(0, 0, 0, 0.28), 0px 30px 92px rgba(226, 30, 133, 0.56)'
     },
@@ -85,9 +87,9 @@ const Main = (props: any) => {
             <Box className={clsx(classes.enterBox, classes.box1)}>
                 <Box className={clsx(classes.enterBox, classes.box2)}>
                     <Box className={clsx(classes.enterBox, classes.box3)}>
-                        <Box className={clsx(classes.enterBox, classes.box4)}>
+                        <Button className={clsx(classes.enterBox, classes.box4)}>
                             <Typography>Enter the MTRX</Typography>
-                        </Box>
+                        </Button>
                     </Box>
                 </Box>
             </Box>
