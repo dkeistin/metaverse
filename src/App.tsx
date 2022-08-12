@@ -8,6 +8,7 @@ import Blog from './components/Blog';
 import Footer from './components/Footer';
 import BottomBlog from './components/BottomBlog';
 import Event from './components/Events';
+import Team from './components/Team';
 
 const useStyles = makeStyles((theme) => ({
   appWrapper: {
@@ -25,6 +26,7 @@ function App() {
       <Header/>
       <Main/>
       <Blog/>
+      <Team/>
       <Event/>
       <BottomBlog/>
       <Footer/>
