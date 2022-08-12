@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import BottomBlog from './components/BottomBlog';
+import Event from './components/Events';
 
 const useStyles = makeStyles((theme) => ({
   appWrapper: {
@@ -23,6 +25,8 @@ function App() {
       <Header/>
       <Main/>
       <Blog/>
+      <Event/>
+      <BottomBlog/>
       <Footer/>
     </Box>
   );
